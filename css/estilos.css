@@ -1,0 +1,27 @@
+#contenedor{
+  background-color: #5b7989;
+  border-radius:10px 10px 0px 0px;
+
+}
+#encabezado{
+  float: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+nav a{
+  float: right;
+  color: white;
+}
+#inicio{
+  text-decoration: none;
+}
+#imagen_cental{
+  text-align: center;
+  background-color: #82c3a6;
+}
+#retratos{
+  float: right;
+  }
+#paisajes{
+  float: left;
+}
