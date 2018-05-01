@@ -2,43 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width,user-scalable="no"">
     <title>Comenzando con la fotografía</title>
     <link rel="stylesheet" href="css/estilos.css">
   </head>
-  <body id="contenedor">
-    <h1 id="encabezado">Comenzando con la fotografía</h1>
-    <nav id="menu">
+  <body>
+    <div class="contenedor">
+    <div class="bloque_titulo">
+      <h1>Comenzando con la fotografía</h1>
+    </div>
+    <div class="bloque_menu">
     <a id="inicio" href="index.html">Inicio</a>
     <a href="paisajes.html">Paisajes</a>
     <a href="retratos.html">Retratos</a>
-  </nav>
-    <figure id="imagen_cental">
-      <img src="paisajes/imagen1.jpg" alt="Imagen Central" width="80%"/>
+  </div>
+  <div class="bloque_imagen_cental">
+    <figure>
+      <img src="paisajes/imagen1.jpg" alt="Imagen Central" width="1000px"/>
     </figure>
-        <figure id="paisajes">
-      <img src="paisajes/imagen2.jpg" alt="Paisajes" width="40%"/>
+  </div>
+  <div class="bloque_imagen_secundaria">
+    <figure id="paisajes">
+      <img src="paisajes/imagen2.jpg" alt="Paisajes" width="100px"/>
+      <figcaption>Paisajes</figcaption>
     </figure>
-    <figure id="retratos">
-      <img src="retratos/safari.jpg" alt="Retrato en Poza azul" width="40%"/>
+        <figure>
+      <img id="retratos" src="retratos/safari.jpg" alt="paseo safari" width="100px"/>
+      <figcaption>Retratos</figcaption>
     </figure>
-
-
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
+  </div>
+  </div>
   </body>
 </html>

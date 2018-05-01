@@ -1,27 +1,29 @@
-#contenedor{
+body{
   background-color: #5b7989;
   border-radius:10px 10px 0px 0px;
-
 }
-#encabezado{
+.bloque_titulo{
   float: left;
   color: white;
   text-shadow: 2px 2px #02010a;
 }
-nav a{
-  float: right;
+.bloque_menu{
+  float:  right;
   color: white;
 }
 #inicio{
   text-decoration: none;
 }
-#imagen_cental{
+.bloque_imagen_cental{
   text-align: center;
-  background-color: #82c3a6;
+  background-color: red;
 }
-#retratos{
-  float: right;
-  }
+.bloque_imagen_secundaria{
+text-align: center;
+background-color: #d5c75f;
+border: 1px solid;
+}
 #paisajes{
-  float: left;
+
+transition:
 }
