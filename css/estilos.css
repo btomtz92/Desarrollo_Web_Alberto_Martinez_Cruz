@@ -1,8 +1,9 @@
 *{
   margin: 0;
+  font-family: Dancing Script;
+  }
 
-}
-header{
+#encabezado{
   margin: 0 auto;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
@@ -12,41 +13,62 @@ header h1{
   color: white;
   text-shadow: 2px 2px #02010a;
 }
-header nav{
+#menu{
   text-align: right;
   }
 #inicio{
   text-decoration: none;
 }
-#imagen_central{
+.imagen_principal{
   background-color: #82c3a6;
+  text-align:center;
+  }
+.imagen_secundaria_retrato{
+  width: 50%;
 }
-section{
+.imagen_secundaria_paisaje{
+  width: 50%;
+}
+#contenido{
+  text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #d5c75f;
-  text-align: center;
-  border: solid 1px;
-}
+  background-color:#d5c75f;
+  }
+  #cuerpo_del_documento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 img{
   box-shadow: 2px 2px #02010a;
 }
 #paisajes{
-  width: 50%;
   transition: transform 1s;
-  border: solid 2px;
-  box-sizing: border-box;
-  }
+    }
 #retratos{
-  width: 50%;
   transition: transform 1s;
-  border: solid 2px;
-  box-sizing: border-box;
   }
 #paisajes:hover{
   transform: rotate(10deg);
 }
 #retratos:hover{
   transform: translate(20px, -5px);
+}
+footer{
+  column-count: 4;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+footer article{
+  box-sizing: border-box;
+  width: 25%;
+}
+body{
+  background-color:#02010a;
 }
