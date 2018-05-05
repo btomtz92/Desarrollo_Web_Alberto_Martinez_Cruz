@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+
+}
+header{
+  margin: 0 auto;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+header h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+header nav{
+  text-align: right;
+  }
+#inicio{
+  text-decoration: none;
+}
+#imagen_central{
+  background-color: #82c3a6;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #d5c75f;
+  text-align: center;
+  border: solid 1px;
+}
+img{
+  box-shadow: 2px 2px #02010a;
+}
+#paisajes{
+  width: 50%;
+  transition: transform 1s;
+  border: solid 2px;
+  box-sizing: border-box;
+  }
+#retratos{
+  width: 50%;
+  transition: transform 1s;
+  border: solid 2px;
+  box-sizing: border-box;
+  }
+#paisajes:hover{
+  transform: rotate(10deg);
+}
+#retratos:hover{
+  transform: translate(20px, -5px);
+}
