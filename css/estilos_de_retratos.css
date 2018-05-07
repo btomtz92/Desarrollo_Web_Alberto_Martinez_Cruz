@@ -7,8 +7,9 @@
   margin: 0 auto;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
+  color: white;
 }
-header h1{
+a[href]{
   text-align: left;
   color: white;
   text-shadow: 2px 2px #02010a;
@@ -16,60 +17,32 @@ header h1{
 #menu{
   text-align: right;
   }
-#inicio{
-  text-decoration: none;
-}
-.imagen_principal{
-  background-color: #82c3a6;
-  text-align:center;
+a[href="retratos.html"]{
+  text-decoration: none;}
+img{
+  width: 30%;
+  box-shadow:2px 2px #02010a;}
+
+  #galeria{
+    background-color: #82c3a6;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
   }
-.imagen_secundaria_retrato{
-  width: 50%;
-}
-.imagen_secundaria_paisaje{
-  width: 50%;
-}
-#contenido{
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color:#d5c75f;
-  }
-  #cuerpo_del_documento{
+  #pie_de_pagina{
+    text-align: center;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-img{
-  box-shadow: 2px 2px #02010a;
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;}
 
-}
-#paisajes{
-  transition: transform 1s;
+    article[class]{
+      box-sizing: border-box;
+      width: 30%;
     }
-#retratos{
-  transition: transform 1s;
-  }
-#paisajes:hover{
-  transform: rotate(10deg);
-}
-#retratos:hover{
-  transform: translate(20px, -5px);
-}
-footer{
-  column-count: 4;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #C6d5c5;
-  border-radius: 0 0 10px 10px;
-}
-footer article{
-  box-sizing: border-box;
-  width: 25%;
-}
-body{
-  background-color:#02010a;
+#contenido{
+  text-align: center;
 }
