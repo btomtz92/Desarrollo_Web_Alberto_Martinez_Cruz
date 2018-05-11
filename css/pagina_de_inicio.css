@@ -1,47 +1,39 @@
 *{
-    margin: 0;
-  font-family: Dancing Script;
-  }
-
-  #contenido{
-    text-align: center;
+  margin: auto;
+  font-family: Dancing  Script;
   }
   body{
-    text-align: center;
-    margin: auto;
     max-width: 900px;
     background: #02010a;
   }
-#encabezado{
-  background-color: #5b7989;
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-  margin: 0;
-  color: white;
-}
-h1{
-  text-align: left;
-  text-shadow: 2px 2px #02010a;
+  #contenido{
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #5b7989;
   }
-#menu{
-  text-align: right;
-    }
-  a[href]{
+  #encabezado{
     color: white;
   }
+  #titulo{
+    margin: 0;
+    text-shadow: 2px 2px #02010a;
+    }
+  #menu{
+  margin: 0;
+}
+  nav a{
+      color: white;
+    }
 a[href="index.html"]{
   text-decoration: none;
   }
-#cuerpo_del_documento{
-  text-align: center;
-  background-color: #82c3a6;
-  display: flex;
-  flex-wrap: wrap;
+.imagen_principal{
+background-color: #82c3a6;
 }
 [class*="secundaria"]{
-  width: 50%;
   background-color: #d5c75f;
-}
+  box-sizing: border-box;
+  }
 [height*="300"]{
   border: 2px solid;
   box-shadow: 2px 2px #82c3a6;
@@ -53,25 +45,67 @@ a[href="index.html"]{
 #retratos:hover{
   transform: translate(20px, -5px);
 }
-#pie_de_pagina{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #C6d5c5;
-  border-radius: 0 0 10px 10px;
-  }
-article{
-  box-sizing: border-box;
-  width: 25%;
-  }
-
-#contenido{
-  max-width: 900px;
-  text-align: center;
-  background-color:#02010a;
-
-}
 img{
   box-shadow: 2px 2px #02010a;
+}
+#encabezado{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+#pie_de_pagina{
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+  }
+
+article{
+  box-sizing: border-box;
+  }
+
+@keyframes slidein {
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0%;}
+  }
+@media screen and (min-width:900px){
+  #encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #titulo{
+    margin: auto;
+    width: 50%;
+    text-align: left;
+  }
+  #menu{
+    margin: auto;
+    width: 50%;
+    text-align: right;
+  }
+  #cuerpo_del_documento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .imagen_principal{
+    width: 100%;
+  }
+  [class*="secundaria"]{
+    width: 50%;
+  }
+  #pie_de_pagina{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    article[class]{
+      margin-top: 0;
+      width: 25%;
+    }
+}
+@media screen and (max-width:899px){
+  #contenido{
+    display:  block;
+    width: 100%;
+  }
 }
