@@ -55,6 +55,7 @@ img{
   border-radius: 0 0 10px 10px;
   }
   article{
+    margin-top: 0;
     box-sizing: border-box;
   }
   #encabezado{
@@ -107,7 +108,4 @@ img{
       display: block;
       width: 100%;
     }
-
-
-
   }
