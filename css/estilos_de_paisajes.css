@@ -1,51 +1,39 @@
 *{
-  margin: 0;
+  margin: auto;
   font-family: Dancing Script;
   }
-
-#contenido{
-  text-align: center;
-}
   body{
-    margin: auto;
     max-width: 900px;
     background: #02010a;
-    text-align: center;
-  }
-#encabezado{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: left;
+    }
+#contenido{
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
   background-color: #5b7989;
-  border-radius: 10px 10px 0 0;
-  color: white;
-  text-shadow: 2px 2px #02010a;
 }
+  #encabezado{
+  color: white;
+  }
 #titulo{
-  width: 50%;
+  margin: 0;
   text-shadow: 2px 2px #02010a;
   }
 #menu{
-  width: 50%;
-  text-align: right;
-  text-shadow: none;
+  margin: 0;
     }
-a[href]{
-      color: white;}
+nav a{
+      color: white;
+    }
 a[href="paisajes.html"]{
-  text-decoration: none;}
+  text-decoration: none;
+}
 img{
-  width: 30%;
   box-shadow: 2px 2px #02010a;}
 
 #galeria{
   background-color: #d5c75f;
   box-sizing: border-box;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
+  }
 #imagen1{
   -webkit-filter:blur(10px);
   filter: blur(10px);}
@@ -63,16 +51,11 @@ img{
   filter: sepia(90%);}
 
 #pie_de_pagina{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   background-color: #C6d5c5;
-  border-radius: 0 0 10px 10px;}
-
+  border-radius: 0 0 10px 10px;
+  }
   article{
     box-sizing: border-box;
-    width: 25%;
   }
   #encabezado{
     animation-duration: 3s;
@@ -83,3 +66,48 @@ img{
     60%{margin-top: -5%;}
     100%{margin-top: 0%;}
     }
+  @media screen and (min-width:900px){
+    #encabezado{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    #titulo{
+      margin: auto;
+      width: 50%;
+      text-align: left;
+    }
+    #menu{
+      margin: auto;
+      width: 50%;
+      text-align: right;
+      }
+    #galeria{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    img[src]{
+      box-sizing: border-box;
+      margin: 3px;
+      width: 30%;
+    }
+    #pie_de_pagina{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      }
+      article[class]{
+        margin-top: 0;
+        width: 25%;
+      }
+  }
+  @media screen and (max-width:899px){
+    #contenido{
+      display: block;
+      width: 100%;
+    }
+
+
+
+  }
